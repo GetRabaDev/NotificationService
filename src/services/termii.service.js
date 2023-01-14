@@ -28,7 +28,7 @@ class TermiiService {
       //   media: {
       //     url: 'https://media.example.com/file',
       //     caption: 'your media file',
-      //   },
+      //   },//
     };
     const response = await axiosPOST(
       `${process.env.TERMII_BASE_URL}/api/sms/send`,
