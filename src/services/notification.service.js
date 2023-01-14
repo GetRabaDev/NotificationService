@@ -15,7 +15,9 @@ const client = require('twilio')(accountSid, authToken);
 
 class NotificationService {
   static notificationSms = async (data) => {
+    console.log(data);
     let response = await TermiiService.notificationSms(data);
+    console.log(response);
     if (!response) {
       const number = convertNigeriaPhoneNumberToInternationFormat({
         phoneNumbers: [data.phonenumber],
