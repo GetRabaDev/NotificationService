@@ -6,8 +6,8 @@ class EmailService {
     port: 587,
     secure: false,
     auth: {
-      user: 'd1headphones@gmail.com',
-      pass: 'yipckidofgetnoqt',
+      user: process.env.EMAIL,
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
