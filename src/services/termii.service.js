@@ -15,10 +15,11 @@ const client = require('twilio')(accountSid, authToken);
 
 class TermiiService {
   static notificationSms = async (data) => {
-    const number = data.phonenumber.substring(1);
-    // var s2 =
+    const number = await convertNigeriaPhoneNumberToInternationFormat({
+      phoneNumbers: [data.phonenumber],
+    });
     const payload = {
-      to: `234${number}`,
+      to: number[0],
       from: 'getraba',
       sms: data.message,
       type: 'plain',

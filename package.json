@@ -38,6 +38,7 @@
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.39",
     "mongoose": "^6.6.6",
+    "nodemailer": "^6.9.0",
     "serverless-http": "^3.1.0",
     "twilio": "^3.84.0",
     "uuid": "^9.0.0"

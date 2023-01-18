@@ -18,6 +18,12 @@ const notificationSms = catchAsync(async (req, res, next) => {
   return successResponse(req, res, todo);
 });
 
+const notificationEmail = catchAsync(async (req, res, next) => {
+  const todo = await NotificationService.notificationEmail(req.body);
+  return successResponse(req, res, todo);
+});
+
 module.exports = {
   notificationSms,
+  notificationEmail,
 };

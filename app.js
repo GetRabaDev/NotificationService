@@ -9,11 +9,11 @@ const fileUpload = require('express-fileupload');
 
 const cors = require('cors');
 
-const db = require('./src/config/db');
+// const db = require('./src/config/db');
 
 const { notificationRoute } = require('./src/routes');
 
-db;
+// db;
 
 const { errorConverter, errorHandler } = require('./src/middleware/error');
 const corsOptions = {
